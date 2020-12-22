@@ -1,0 +1,36 @@
+.board {
+  border: 1px solid #2f2f2f;
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.board-row {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  width: 300px;
+}
+.board-row:not(:last-child) {
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.square {
+  width: 100px;
+  height: 100%;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.square:hover {
+  background-color: #d7d7d7;
+}
+.square:not(:last-child) {
+  border-right: 1px solid #2f2f2f;
+}
+
+/*# sourceMappingURL=Board.css.map */
